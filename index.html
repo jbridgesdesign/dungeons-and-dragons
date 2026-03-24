@@ -14,7 +14,7 @@
     <style>
       body {
         background-color: lightblue;
-        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/826/original/240_F_196896934_Q5bPboRFIXvD0gjMgBOk1iM70OuKwUPC.jpg");
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/855/original/wood.jpeg");
         background-repeat: repeat;
         font-family: "Times New Roman", Times, serif;
       }
@@ -25,7 +25,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 36px;
-        color: red;
+        color: orangered;
       }
 
       h2 {
@@ -33,7 +33,10 @@
       }
 
       a {
-        color: navy;
+        color: #211d44;
+      }
+      a:hover {
+        color: orangered;
       }
 
       img {
@@ -48,15 +51,14 @@
       button {
         display: block;
         margin: 0 auto;
-        border: 1px solid purple;
-        background-color: white;
         font-size: 20px;
         border-radius: 6px;
         padding: 10px 15px;
         transition: all 150ms ease-in-out;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
       }
       button:hover {
-        background-color: blue;
+        background-color: #211d44;
         cursor: pointer;
       }
 
@@ -72,25 +74,34 @@
         text-align: center;
         margin: 10px 0;
         font-size: 12px;
+        color: white;
+      }
+
+      footer a:hover {
+        color: white;
       }
 
       .theme-button {
         font-size: 10px;
-        background-color: purple;
+        background-color: #211d44;
         color: white;
         padding: 5px 8px;
         margin-top: 20px;
+        border: 1px solid #211d44;
       }
       .theme-button:hover {
-        color: purple;
+        color: #211d44;
         background-color: white;
       }
 
       .fancy-button {
         font-family: "Jacquard 24", system-ui;
+        background-color: orangered;
+        color: white;
+        border: 1px solid orange;
       }
       .fancy-button:hover {
-        background-color: navy;
+        background-color: #211d44;
         color: white;
       }
 
@@ -119,17 +130,28 @@
       }
 
       body.dark-theme {
-        background-color: navy;
+        background-color: black;
         background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/854/original/360_F_360193189_tWKC3HPP8V9u7zjzaPc41nvdMV0RP0y8.jpg");
         background-repeat: repeat;
         color: white;
       }
       .dark-theme .container {
-        background-color: darkmagenta;
+        background-color: #211d44;
         color: white;
       }
+
+      .dark-theme a {
+        color: orangered;
+      }
+      .dark-theme a:hover {
+        color: white;
+      }
+
       .dark-theme footer a {
         color: palevioletred;
+      }
+      .dark-theme footer a:hover {
+        color: white;
       }
     </style>
   </head>
@@ -137,7 +159,7 @@
     <button class="theme-button">Dark theme</button>
     <div class="container">
       <h1>Dungeons &amp; Dragons 🎲🎲🎲</h1>
-      <h2>My favorite hobby</h2>
+      <h2><em>My favorite hobby</em></h2>
       <a
         href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"
         target="_blank"
@@ -189,7 +211,8 @@
     </div>
     <footer>
       <strong
-        >Coded with 💗 by <a href="" target="_blank">Jenn Bridges</a></strong
+        >Coded with 💗 by <a href="" target="_blank">Jenn Bridges</a> using
+        HTML, CSS, and JavaScript</strong
       >
     </footer>
 
