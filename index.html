@@ -4,49 +4,146 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap"
+      rel="stylesheet"
+    />
     <title>Dungeons &amp; Dragons - My favorite hobby 🎲🎲🎲</title>
+    <style>
+      body {
+        background-color: lightblue;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/826/original/240_F_196896934_Q5bPboRFIXvD0gjMgBOk1iM70OuKwUPC.jpg");
+        background-repeat: repeat;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Jacquard 24", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      a {
+        color: navy;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid purple;
+        background-color: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: blue;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 18px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 12px;
+      }
+
+      .theme-button {
+        font-size: 10px;
+        background-color: purple;
+        color: white;
+        padding: 5px 8px;
+        margin-top: 20px;
+      }
+      .theme-button:hover {
+        color: purple;
+        background-color: white;
+      }
+
+      .fancy-button {
+        font-family: "Jacquard 24", system-ui;
+      }
+      .fancy-button:hover {
+        background-color: navy;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark theme</button>
-    <h1>Dungeons &amp; Dragons 🎲🎲🎲</h1>
-    <h2>My favorite hobby</h2>
-    <a
-      href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"
-      target="_blank"
-    >
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>Dungeons &amp; Dragons 🎲🎲🎲</h1>
+      <h2>My favorite hobby</h2>
+      <a
+        href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"
+        target="_blank"
+      >
+        <img
+          src="https://images.ctfassets.net/swt2dsco9mfe/G8hY5RaUUgMiwctolsI0K/1496009a9a957296d768d86e7503b5ca/157997_1920x1342.jpg"
+          alt=""
+        />
+      </a>
       <img
-        src="https://images.ctfassets.net/swt2dsco9mfe/G8hY5RaUUgMiwctolsI0K/1496009a9a957296d768d86e7503b5ca/157997_1920x1342.jpg"
+        src="https://cdn.britannica.com/71/241671-050-B5227EBD/Game-of-Dungeons-and-Dragons.jpg"
         alt=""
       />
-    </a>
-    <img
-      src="https://cdn.britannica.com/71/241671-050-B5227EBD/Game-of-Dungeons-and-Dragons.jpg"
-      alt=""
-    />
-    <img
-      src="https://assetsio.gnwcdn.com/ilse-gort-stormwreck-isle-starter-set-dungeons-dragons.png"
-      alt=""
-    />
-    <img
-      src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/Dungeons-Dragons-DM-screen.jpg"
-      alt=""
-    />
-    <img
-      src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/01/DD-Monster.jpg"
-      alt=""
-    />
-    <p>
-      <strong>Dungeons &amp; Dragons</strong> is a fantasy tabletop role-playing
-      game originally (ttrpg) created and designed by Gary Gygax and Dave
-      Arneson. The game was first published in 1974 by Tactical Studies Rules,
-      Inc. It has been published by Wizards of the Coast, later a subsidiary of
-      Hasbro, since 1997.
-    </p>
+      <img
+        src="https://assetsio.gnwcdn.com/ilse-gort-stormwreck-isle-starter-set-dungeons-dragons.png"
+        alt=""
+      />
+      <img
+        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/Dungeons-Dragons-DM-screen.jpg"
+        alt=""
+      />
+      <img
+        src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/01/DD-Monster.jpg"
+        alt=""
+      />
+      <p>
+        <strong>Dungeons &amp; Dragons</strong> is a fantasy tabletop
+        role-playing game originally (ttrpg) created and designed by Gary Gygax
+        and Dave Arneson. The game was first published in 1974 by Tactical
+        Studies Rules, Inc. It has been published by Wizards of the Coast, later
+        a subsidiary of Hasbro, since 1997.
+      </p>
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"
+          target="_blank"
+          >📖 <strong>Read more on Wikipedia</strong></a
+        >
+      </p>
 
-    <button>Learn D&amp;D</button>
+      <button class="fancy-button">Learn D&amp;D</button>
+    </div>
     <footer>
-      Coded with 💗 by
-      <a href="" target="_blank">Jenn Bridges</a>
+      <strong
+        >Coded with 💗 by <a href="" target="_blank">Jenn Bridges</a></strong
+      >
     </footer>
   </body>
 </html>
