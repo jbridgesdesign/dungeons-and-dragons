@@ -25,6 +25,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 36px;
+        color: red;
       }
 
       h2 {
@@ -91,6 +92,15 @@
         background-color: navy;
         color: white;
       }
+
+      .dragon-image {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .dragon-image:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -105,6 +115,7 @@
         <img
           src="https://images.ctfassets.net/swt2dsco9mfe/G8hY5RaUUgMiwctolsI0K/1496009a9a957296d768d86e7503b5ca/157997_1920x1342.jpg"
           alt=""
+          class="dragon-image"
         />
       </a>
       <img
