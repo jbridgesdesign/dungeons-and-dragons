@@ -117,6 +117,20 @@
       .grid img:hover {
         transform: scale(2);
       }
+
+      body.dark-theme {
+        background-color: navy;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/854/original/360_F_360193189_tWKC3HPP8V9u7zjzaPc41nvdMV0RP0y8.jpg");
+        background-repeat: repeat;
+        color: white;
+      }
+      .dark-theme .container {
+        background-color: darkmagenta;
+        color: white;
+      }
+      .dark-theme footer a {
+        color: palevioletred;
+      }
     </style>
   </head>
   <body>
@@ -167,12 +181,30 @@
         >
       </p>
 
-      <button class="fancy-button">Learn D&amp;D</button>
+      <a
+        href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"
+        target="_blank"
+        ><button class="fancy-button">Learn D&amp;D</button></a
+      >
     </div>
     <footer>
       <strong
         >Coded with 💗 by <a href="" target="_blank">Jenn Bridges</a></strong
       >
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark-theme")) {
+          body.classList.remove("dark-theme");
+        } else {
+          body.classList.add("dark-theme");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
