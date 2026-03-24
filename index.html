@@ -41,7 +41,8 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.3;
       }
 
       button {
@@ -101,6 +102,21 @@
         filter: contrast(80%);
         transform: scale(1.1);
       }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
     </style>
   </head>
   <body>
@@ -118,22 +134,24 @@
           class="dragon-image"
         />
       </a>
-      <img
-        src="https://cdn.britannica.com/71/241671-050-B5227EBD/Game-of-Dungeons-and-Dragons.jpg"
-        alt=""
-      />
-      <img
-        src="https://assetsio.gnwcdn.com/ilse-gort-stormwreck-isle-starter-set-dungeons-dragons.png"
-        alt=""
-      />
-      <img
-        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/Dungeons-Dragons-DM-screen.jpg"
-        alt=""
-      />
-      <img
-        src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/01/DD-Monster.jpg"
-        alt=""
-      />
+      <div class="grid">
+        <img
+          src="https://cdn.britannica.com/71/241671-050-B5227EBD/Game-of-Dungeons-and-Dragons.jpg"
+          alt=""
+        />
+        <img
+          src="https://assetsio.gnwcdn.com/ilse-gort-stormwreck-isle-starter-set-dungeons-dragons.png"
+          alt=""
+        />
+        <img
+          src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/Dungeons-Dragons-DM-screen.jpg"
+          alt=""
+        />
+        <img
+          src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/01/DD-Monster.jpg"
+          alt=""
+        />
+      </div>
       <p>
         <strong>Dungeons &amp; Dragons</strong> is a fantasy tabletop
         role-playing game originally (ttrpg) created and designed by Gary Gygax
